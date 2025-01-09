@@ -38,6 +38,7 @@ app.add_middleware(
 )
 
 app.include_router(deepLearningRouter)
+app.include_router(generateQuestionsRouter)
 
 if __name__ == "__main__":
     colorama.init(autoreset=True)
