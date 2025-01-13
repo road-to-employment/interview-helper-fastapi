@@ -9,12 +9,12 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 
 from generate_questions.controller.generate_questions_controller import generateQuestionsRouter
-from template.deep_learning.controller.deep_learning_controller import deepLearningRouter
 from user_defined_initializer.init import UserDefinedInitializer
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'template'))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'template', 'include', 'socket_server'))
 
+from template.deep_learning.controller.deep_learning_controller import deepLearningRouter
 from template.system_initializer.init import SystemInitializer
 from template.task_manager.manager import TaskManager
 from template.include.socket_server.initializer.init_domain import DomainInitializer
